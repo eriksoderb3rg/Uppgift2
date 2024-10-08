@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Datakommunikation och Webbadresser</title>
+</head>
+
+<body>
+    <ul class="navigation">
+        <li><a href="index.html">Datakommunikation och webbadresser</a></li>
+        <li><a href="f2.html">HTML</a></li>
+        <li><a href="f3.html">CSS</a></li>
+    </ul>
+
+    <div class="image-container">
+        <img src="/img/pic1.jpg" alt="Bild 1" id="pic1" class="styled-image">
+        <h1 id="main-title">Datakommunikation och webbadresser</h1>
+    </div>
+
+    <h2 class="questions">Vilken roll spelar DNS servern när en användare navigerar till en webbsida?</h2>
+    <p>DNS servern matchar domännamn med motsvarande IP-adresser. DNS servrar gör att upplevelsen på webben blir
+        mer användarvänlig då vi istället för sifferkoder får faktiska namn på webbplatser.</p>
+
+    <h2 class="questions">Beskriv kortfattat de steg som klienten och servern tillsammans går igenom när en
+        webbsida bestående av filerna index.html, style.css och example.jpg öppnas.</h2>
+
+    <p>När en webbsida öppnas gör både servern och webbläsaren en rad olika steg tills hemsidan och dess innehåll
+        visas. Klienten (webbläsaren) gör begäran till servern - servern mottar begäran och svarar med "index.html"
+        -filen. Klienten renderar indexfilen och hittar resterande filer som CSS- och IMG-filer, där varje fil hämtas
+        och renderas av klienten och servern.</p>
+
+    <h2 class="questions">Beskriv de delar som följande url består av:
+        https://medieteknik.lnu.se:443/wt1/index.html#intro
+        Ta upp alla delar som åtskiljs av /, : och #</h2>
+    <p>
+        https://" är ett typ av protokoll som innebär att kommunikationen är krypterad.
+        "medieteknik.lnu.se" är det domännamn som servern är värd för.
+        ":443" är den port som ska användas för kommunikation.
+        "/wt1/index.html" är en typ av sökväg som pekar på en specifik fil för att rendera hemsidan.
+        "#intro" är en specifik del av HTML-filen/sidan.
+    </p>
+
+</body>
+
+</html>
