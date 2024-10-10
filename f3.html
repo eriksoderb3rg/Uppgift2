@@ -4,43 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>CSS hej</title>
+    <title>Navigering</title>
 </head>
+
 
 <body>
     <ul class="navigation">
-        <li><a href="index.html">Datakommunikation och webbadresser</a></li>
-        <li><a href="f2.html">HTML</a></li>
-        <li><a href="f3.html">CSS</a></li>
+        <li><a href="index.html">Layout</a></li>
+        <li><a href="f2.html">Navigering</a></li>
+        <li><a href="f3.html">Målgruppsanalys och kravspecifikation</a></li>
     </ul>
-
     <div class="image-container">
-        <img src="/img/pic3.jpg" alt="Bild 1" id="pic1" class="styled-image">
-        <h1 id="main-title">CSS</h1>
+        <img src="/img/pic1.png" alt="Bild 1" id="pic1" class="styled-image">
+        <h1 id="main-title">Målgruppsanalys och kravspecifikation</h1>
     </div>
-
-    <h2 class="questions">Vad är en regel i CSS och vad består den av?</h2>
-    <p> En regel i CSS definierar hur HTML-element ska se ut, exempelvis färg, storlek eller placering.
-        Varje regel består huvudsakligen av två delar: en selektor och ett deklarationsblock. En selektor bestämmer
-        vilket HTML-element CSS-regeln ska användas på. Ett deklarationsblock innehåller deklarationer som bestämmer
-        en
-        egenskap som ska tillämpas på HTML-elementet. Exempelvis color, font size. </p>
-
-    <h2 class="questions">Vad är skillnaden mellan id och class? När bör man använda id respektive class? </h2>
-    <p> ID-attributet används för att unikt identifiera ett element på en hemsida. Det innebär att samma
-        ID-värde
-        bara
-        får finnas för ett specifikt element på en webbsida. Class-attributet har samma funktion men kan
-        användas
-        till
-        flera element på samma webbsida. ID-attributet används därför när man är säker på att referensen endast
-        kommer
-        att göras en gång och class-attributet används till motsatsen - när samma typ av referens kan behöva
-        användas på
-        fler ställen på en hemsida.
-
-
-    </p>
+    <div class="grid-container three-columns"> <!-- For the main page -->
+        <div class="grid-item">
+            <h2 class="questions">Ett resultat i målgruppsanalysen är "användarnas behov" (user needs). Beskriv vad
+                detta är och vad det ska användas till.</h2>
+            <p>Skriv ditt svar här.</p>
+        </div>
+        <div class="grid-item">
+            <h2 class="questions">I en kravspecifikation är det viktigt att kraven skrivs, så att de är mätbara. Vad bör
+                man tänka på då man formulerar ett krav, så att det är mätbart?</p>
+        </div>
+        <div class="grid-item">
+            <h2 class="questions">Vad är skillnaden mellan krav på innehåll och krav på funktionalitet? Ge exempel på
+                ett mätbart krav av respektive typ.
+            </h2>
+            <p>Skriv ditt svar här.</p>
+        </div>
 
 </body>
 

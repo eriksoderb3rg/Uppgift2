@@ -1,45 +1,26 @@
 @charset "UTF-8";
 
+/* Universal box-sizing */
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
+/* Body styling */data 
 body {
     width: 100%; 
     max-width: 1500px; 
     margin: 0 auto;
-    background-color: rgb(189, 199, 209);
+    background-color: rgb(41, 52, 69);
     padding: 0; 
 }
 
-h2.questions {
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-}
-
-p {
-    font-size: 25px;
-    text-align: center;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 15px; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
-    width: 1000px;
-    height: 250px;
-}
-
+/* Navigation menu styling */
 ul.navigation {
     list-style-type: none;
-    padding: 0;
-    margin: 20px auto; 
-    background-color: rgb(189, 199, 209); 
-    border-radius: 8px; 
-    padding: 10px; 
+    padding: 0; /* Remove padding */
+    margin: 30px auto; 
+    background-color: transparent; /* Set background color to transparent */
+    border-radius: 10px; 
     width: fit-content; 
     text-align: center; 
 }
@@ -51,27 +32,83 @@ ul.navigation li {
 
 ul.navigation a {
     display: block;
-    padding: 10px;
+    padding: 20px; /* Padding for clickable area */
     text-decoration: none;
-    color: black; 
-    font-size: 20px;
-    border-bottom: 1px solid #0b0b0b; 
+    color: rgb(189, 186, 186); 
+    font-size: 30px;
+    border-bottom:2px solid #fffefe; 
 }
 
 ul.navigation a:hover {
-    background-color: #3f6185; 
+    background-color: #5f67c1; /* Optional hover effect */
 }
 
+/* Image container styling */
+.image-container {
+    position: relative; /* Relative positioning for child elements */
+    height: 300px; /* Set height for the container */
+}
+
+/* Main title styling */
 #main-title {
-    position: absolute; 
-    bottom: 10px; 
+    position: absolute; /* Position title absolutely */
     left: 50%; 
-    transform: translateX(-50%); 
-    font-size: 50px;               
+    top: 30%; /* Center title vertically */
+    transform: translate(-50%, -50%); /* Center title horizontally */
+    font-size: 80px;               
     text-align: center;           
-    color: #fff; 
-    padding: 40px;              
-    background-color: rgba(44, 62, 80, 0.6); 
+    color: rgb(189, 186, 186); 
+    padding: 0;              
+    background-color: transparent; /* Make background transparent */
+}
+
+/* Styled image */
+img {
+    display: block;
+    width: 100%; /* Ensure the image takes full width */
+    height: 100%; /* Ensure the image takes full height */
+    object-fit: cover; /* Cover the entire area of the container */
+    border-radius: 30px; 
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5); 
+    margin-top: 80px;
+}
+
+/* Question headings */
+h2.questions {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Grid container for main page (2 columns) */
+.grid-container.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns for main page */
+    gap: 50px; /* Space between columns */
+    padding: 20px;
+    margin-top:50px
+}
+.grid-container.three-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns for main page */
+    gap: 50px; /* Space between columns */
+    padding: 20px;
+    margin-top:50px
+}
+/* Grid item styling */
+.grid-item {
+    padding: 30px;
+    background-color: rgb(40, 41, 46); /* Using a slightly adjusted color */
+    border: 3px solid #000000; /* Thicker border for more definition */
+    border-radius: 8px; /* Rounded corners for consistency */
+    text-align: center;
+    color: rgb(189, 186, 186);  /* Ensuring text is readable */
 }
 .image-container {
     position: relative;
