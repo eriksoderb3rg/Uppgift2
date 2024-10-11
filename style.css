@@ -38,13 +38,13 @@ ul.navigation a {
     display: block;
     padding: 20px; /* Padding for clickable area */
     text-decoration: none;
-    color: rgb(189, 186, 186); 
+    color: rgb(77, 75, 75); 
     font-size: 30px;
     border-bottom:2px solid #fffefe; 
 }
 
 ul.navigation a:hover {
-    background-color: #5f67c1; /* Optional hover effect */
+    background-color: #b2b2b3; /* Optional hover effect */
 }
 
 /* Image container styling */
@@ -59,9 +59,9 @@ ul.navigation a:hover {
     left: 50%; 
     top: 30%; /* Center title vertically */
     transform: translate(-50%, -50%); /* Center title horizontally */
-    font-size: 80px;               
+    font-size: 60px;               
     text-align: center;           
-    color: rgb(189, 186, 186); 
+    color: rgb(255, 251, 251); 
     padding: 0;              
     background-color: transparent; /* Make background transparent */
 }
