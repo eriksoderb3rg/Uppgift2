@@ -41,6 +41,7 @@ ul.navigation a {
     color: rgb(77, 75, 75); 
     font-size: 30px;
     border-bottom:2px solid #fffefe; 
+    transition: transform 0.3s ease, background 0.3s ease;  
 }
 
 ul.navigation a:hover {
@@ -106,14 +107,21 @@ p {
     margin-top:50px
 }
 /* Grid item styling */
+/* Grid item styling with transition and transform */
 .grid-item {
     padding: 30px;
     background-color: rgb(40, 41, 46); /* Using a slightly adjusted color */
-    border: 3px solid #000000; /* Thicker border for more definition */
-    border-radius: 8px; /* Rounded corners for consistency */
+    border: 3px solid #000000;
+    border-radius: 8px;
     text-align: center;
-    color: rgb(189, 186, 186);  /* Ensuring text is readable */
+    color: rgb(189, 186, 186);
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
 }
+
+.grid-item:hover {
+    transform: scale(1.05); /* Slightly increase the size of the column */
+}
+
 .image-container {
     position: relative;
     width: 1000px; 
